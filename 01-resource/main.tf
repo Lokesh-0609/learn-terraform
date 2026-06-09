@@ -2,3 +2,8 @@ resource "azurerm_resource_group" "example" {
   name     = "example"
   location = "West Europe"
 }
+
+# Configure the Microsoft Azure Provider
+provider "azurerm" {
+  features {}
+}
