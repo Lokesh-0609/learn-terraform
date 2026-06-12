@@ -23,7 +23,7 @@ resource "azurerm_linux_virtual_machine" "main" {
   network_interface_ids = [azurerm_network_interface.main.id]
   size               = "Standard_D2s_v3"
 
-  source_image_id = "/subscriptions/b1302eea-54e8-482b-a20f-fcc64ece4d78/resourceGroups/vm-ware-DenmarkEast/providers/Microsoft.Compute/galleries/azure_Readhut/images/linux-image"
+  source_image_id = "/subscriptions/b1302eea-54e8-482b-a20f-fcc64ece4d78/resourceGroups/vm-ware-DenmarkEast/providers/Microsoft.Compute/galleries/azure_Readhut"
 
   os_disk {
     caching              = "ReadWrite"
