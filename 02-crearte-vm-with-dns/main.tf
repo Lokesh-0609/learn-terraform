@@ -10,7 +10,7 @@ resource "azurerm_network_interface" "main" {
 
   ip_configuration {
     name                          = "Lokeshconfiguration1"
-    subnet_id                     = "/subscriptions/b1302eea-54e8-482b-a20f-fcc64ece4d78/resourceGroups/vm-ware-DenmarkEast/providers/Microsoft.Network/networkSecurityGroups/network-security-group"
+    subnet_id                     = "/subscriptions/b1302eea-54e8-482b-a20f-fcc64ece4d78/resourceGroups/vm-ware-DenmarkEast/providers/Microsoft.Network/virtualNetworks/AnsibleControler-vnet/subnets/default"
     private_ip_address_allocation = "Dynamic"
   }
 }
