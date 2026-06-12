@@ -5,8 +5,8 @@ provider "azurerm" {
 
 resource "azurerm_network_interface" "main" {
   name                = "Lokesh-nic"
-  location            = "Denmark East"
-  resource_group_name = "denmark_roboshop"
+  location            = "denmarkeast"
+  resource_group_name = "vm-ware-DenmarkEast"
 
   ip_configuration {
     name                          = "Lokeshconfiguration1"
@@ -18,8 +18,8 @@ resource "azurerm_network_interface" "main" {
 
 resource "azurerm_linux_virtual_machine" "main" {
   name                  = "Lokesh-vm"
-  location              = "Denmark East"
-  resource_group_name   = "denmark_roboshop"
+  location              = "denmarkeast"
+  resource_group_name   = "vm-ware-DenmarkEast"
   network_interface_ids = [azurerm_network_interface.main.id]
   size               = "Standard_D2s_v3"
 
